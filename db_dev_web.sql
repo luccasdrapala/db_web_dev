@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 06-Jun-2022 às 16:10
+-- Tempo de geração: 06-Jun-2022 às 19:39
 -- Versão do servidor: 10.4.22-MariaDB
 -- versão do PHP: 8.1.1
 
@@ -34,7 +34,8 @@ CREATE TABLE `tb_cursos` (
   `resumo` text DEFAULT NULL,
   `data_cadastro` datetime NOT NULL,
   `ativo` tinyint(1) DEFAULT 1,
-  `investimento` float(8,2) DEFAULT 0.00
+  `investimento` float(8,2) DEFAULT 0.00,
+  `carga_horaria` int(5) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 COMMIT;
 
